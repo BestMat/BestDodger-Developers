@@ -1,0 +1,1 @@
+let video;let net;let poses = [];function onCam(){video = createCapture(VIDEO);video.size(width, height);net = ml5.poseNet(video, modelReady);net.on('pose', function(results) {   poses = results;});video.hide();}
